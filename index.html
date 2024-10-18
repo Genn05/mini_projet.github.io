@@ -1,62 +1,109 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mon CV</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Profil Professionnel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
 <body>
-    <div class="container">
-        <header>
-            <h1>adem jendoubi</h1>
-            <p>Email: ademjendoubi21@gmail.com | Téléphone: 99854359</p>
-            <p>Adresse: 16 rue hongaire cité hidab, fouchena, ben arous </p>
+    <div class="container text-center">
+        <header class="mb-5">
+            <h1>Adem Jendoubi</h1>
+            <h3>Étudiant en Développement de Systèmes d'Information</h3>
         </header>
 
-        <section class="experience">
-            <h2>Expérience Professionnelle</h2>
-            <div class="job">
-                <h3>Stagiaire en développement de systèmes d'information - Mécaprotec
-                    30 jours
-                    </h3>
-                <p><em>14/1/2024 - 5/2/2024</em></p>
-                <ul>
-                    <li>Participation à des projets de développement.</li>
-                    <li>Collaboration avec l'équipe pour résoudre des problèmes techniques.</li>
-                    <li>Assistance dans la gestion de bases de données.</li>
-                </ul>
-            </div>
-            
+        <section class="about mt-5">
+            <h2>À propos de moi</h2>
+            <p>Je suis un étudiant passionné par les technologies de l'information et le développement web. Actuellement en 2ème année d'études, je m'intéresse à la programmation et à la gestion de bases de données.</p>
+            <p>En plus de mes études, je suis un grand amateur de football.</p>
         </section>
 
-        <section class="education">
-            <h2>Formation</h2>
-            <div class="school">
-                <h3>Étudiant en 2ème année de Développement de Systèmes d'Information
-                    [iset tozeur]
-                    </h3>
-                <p><em>Date de début - Date de fin</em></p>
-            </div>
-            
-        </section>
-
-        <section class="skills">
-            <h2>Compétences</h2>
-            <ul>
-                <li>Développement web (HTML, CSS, JavaScript)
-                    <li>Programmation (Python, Java)</li>
-                    <li>Gestion de bases de données (SQL)</li>
-                    <li>Résolution de problèmes techniques</li>
-               
+        <section class="hobbies mt-5">
+            <h2>Hobbies</h2>
+            <ul class="hobbies-list">
+                <li>⚽ Jouer au football</li>
+                <li>🎮 Vidéos jeux</li>
+                <li>📚 Lecture de livres sur la technologie</li>
+                <li>🎨 Dessin et création numérique</li>
             </ul>
         </section>
 
-        <footer>
-            <p>Merci de votre attention !</p>
-            <p>ce devez telecharger mon cv <a href="cv.pdf" download>cliquez ici</a></p>
+        <section class="education mt-5">
+            <h2>Éducation</h2>
+            <p>Actuellement en 2ème année de Développement de Systèmes d'Information, mon programme inclut le développement web, l'analyse de systèmes et la gestion de bases de données.</p>
+        </section>
+
+        <section class="skills mt-5">
+            <h2>Compétences</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Domaine</th>
+                        <th>Niveau</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Développement web</td>
+                        <td>HTML, CSS, JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td>Programmation</td>
+                        <td>Python, Java</td>
+                    </tr>
+                    <tr>
+                        <td>Gestion de bases de données</td>
+                        <td>SQL</td>
+                    </tr>
+                    <tr>
+                        <td>Résolution de problèmes techniques</td>
+                        <td>Intermédiaire</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="experience mt-5">
+            <h2>Expérience Professionnelle</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Poste</th>
+                        <th>Entreprise</th>
+                        <th>Période</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Stagiaire en Développement de Systèmes d'Information</td>
+                        <td>Mécaprotec</td>
+                        <td>14 janvier 2024 - 5 février 2024</td>
+                    </tr>
+                    <tr>
+                        <td>Ouvrier en Aluminium</td>
+                        <td>Petite société de fabrication d'aluminium</td>
+                        <td>2023 (études simultanées)</td>
+                    </tr>
+                    <tr>
+                        <td>Serveur</td>
+                        <td>Café local</td>
+                        <td>Week-ends (2023)</td>
+                    </tr>
+                    <tr>
+                        <td>Développeur Web (Projet)</td>
+                        <td>Freelance</td>
+                        <td>2023</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <footer class="mt-5">
+            <p>Merci de votre visite !</p>
+            <a href="cv.pdf" class="btn btn-primary" download> Télécharger mon CV</a>
         </footer>
     </div>
 </body>
